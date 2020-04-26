@@ -1,5 +1,7 @@
-<app-header></app-header>
+<app-header (navigation)="navigation($event)"></app-header>
 <div class="container p-5">
-  <app-recipes></app-recipes>
-  <app-shoping-list></app-shoping-list>
+  <router-outlet></router-outlet>
+  <!-- <ng-template #shopping>
+    <app-shoping-list></app-shoping-list>
+  </ng-template> -->
 </div>

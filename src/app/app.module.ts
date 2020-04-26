@@ -11,6 +11,9 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShopingListComponent } from './shoping-list/shoping-list.component';
 import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.component';
 
+import {AppRoutingService} from './app-routing-module';
+import { AddRecipeComponent } from './recipes/add-recipe/add-recipe.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +23,13 @@ import { ShopingEditComponent } from './shoping-list/shoping-edit/shoping-edit.c
     RecipeDetailComponent,
     RecipeItemComponent,
     ShopingListComponent,
-    ShopingEditComponent
+    ShopingEditComponent,
+    AddRecipeComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingService
   ],
   providers: [],
   bootstrap: [AppComponent]
